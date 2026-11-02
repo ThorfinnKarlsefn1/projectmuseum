@@ -14,14 +14,17 @@ main { padding: 20px; max-width: 1200px; margin: 0 auto; }
 .exhibit-card .card-body { padding: 16px; }
 .exhibit-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
 .qr-mini {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     margin: 10px auto 0;
     display: block;
     background: white;
-    padding: 4px;
-    border-radius: 8px;
-    object-fit: contain;
+    padding: 2px;
+    border-radius: 4px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
 .exhibit-page { max-width: 800px; margin: 0 auto; padding: 20px; }
 .exhibit-image { width: 100%; border-radius: 16px; margin-bottom: 20px; }
