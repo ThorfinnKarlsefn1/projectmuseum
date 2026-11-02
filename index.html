@@ -1,50 +1,55 @@
+<!--Главная страница-->
+<!--Базовый шаблон-->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spisok eksponatov</title>
+    <title>Список экспонатов</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         
-<h1>Shkolnyy muzey</h1>
-<p class="subtitle">Navedite kameru na QR-kod</p>
+<h1>🏫 Школьный музей</h1>
+<p class="subtitle">Наведите камеру телефона на QR-код у экспоната</p>
 
-        <button id="theme-toggle" class="theme-btn">Moon</button>
+        <button id="theme-toggle" class="theme-btn">🌙</button>
     </header>
     <main>
-<h2>Spisok eksponatov</h2>
+<h2>Список экспонатов</h2>
 <div class="exhibits-grid">
     
     <a href="exhibit_1.html" class="exhibit-card">
-        <img src="images/exp1.jpg" alt="Первый компьютер в 181 школе">
+        <img src="images/exp1.jpg" alt="Первый компьютер в 181 школе"
+             onerror="this.src='https://via.placeholder.com/400x200?text=Нет+фото'">
         <div class="card-body">
             <h3>Первый компьютер в 181 школе</h3>
-            <img src="qr/exp_1.png" class="qr-mini">
+            <img src="qr/exp_1.png" alt="QR код" class="qr-mini">
         </div>
     </a>
     
     <a href="exhibit_2.html" class="exhibit-card">
-        <img src="images/exp2.jpg" alt="Школьный глобус доисторического года">
+        <img src="images/exp2.jpg" alt="Школьный глобус доисторического года"
+             onerror="this.src='https://via.placeholder.com/400x200?text=Нет+фото'">
         <div class="card-body">
             <h3>Школьный глобус доисторического года</h3>
-            <img src="qr/exp_2.png" class="qr-mini">
+            <img src="qr/exp_2.png" alt="QR код" class="qr-mini">
         </div>
     </a>
     
     <a href="exhibit_3.html" class="exhibit-card">
-        <img src="images/exp3.jpg" alt="Первая ручка в этой школе">
+        <img src="images/exp3.jpg" alt="Первая ручка в этой школе"
+             onerror="this.src='https://via.placeholder.com/400x200?text=Нет+фото'">
         <div class="card-body">
             <h3>Первая ручка в этой школе</h3>
-            <img src="qr/exp_3.png" class="qr-mini">
+            <img src="qr/exp_3.png" alt="QR код" class="qr-mini">
         </div>
     </a>
     
 </div>
 </main>
-    <footer><p>2026 Shkolnyy muzey</p></footer>
+    <footer><p>© 2026 Школьный музей. Проект ученика 11 класса.</p></footer>
     <script src="script.js"></script>
 </body>
 </html>
