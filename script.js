@@ -1,10 +1,10 @@
 const themeBtn = document.getElementById('theme-toggle');
 const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') { document.body.classList.add('dark'); themeBtn.textContent = 'Sun'; }
+if (savedTheme === 'dark') { document.body.classList.add('dark'); themeBtn.textContent = 'Дневной'; }
 themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark');
     const isDark = document.body.classList.contains('dark');
-    themeBtn.textContent = isDark ? 'Sun' : 'Moon';
+    themeBtn.textContent = isDark ? 'Дневной' : 'Ночной';
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
 const audio = document.getElementById('audio');
@@ -22,8 +22,8 @@ if (audio) {
     }
     audio.addEventListener('loadedmetadata', () => { durationEl.textContent = formatTime(audio.duration); });
     playBtn.addEventListener('click', () => {
-        if (audio.paused) { audio.play(); playBtn.textContent = 'Pause'; }
-        else { audio.pause(); playBtn.textContent = 'Play'; }
+        if (audio.paused) { audio.play(); playBtn.textContent = 'Пауза'; }
+        else { audio.pause(); playBtn.textContent = 'Старт'; }
     });
     audio.addEventListener('timeupdate', () => {
         const percent = (audio.currentTime / audio.duration) * 100;
