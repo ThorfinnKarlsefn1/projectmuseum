@@ -14,8 +14,8 @@ main { padding: 20px; max-width: 1200px; margin: 0 auto; }
 .exhibit-card .card-body { padding: 16px; }
 .exhibit-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
 .qr-mini {
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
     margin: 10px auto 0;
     display: block;
     background: white;
