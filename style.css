@@ -163,6 +163,11 @@ main h2 {
     font-size: 1.05rem;
     margin-bottom: 24px;
     line-height: 1.7;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    max-width: 100%;
 }
 
 .audio-player {
@@ -234,4 +239,8 @@ footer {
     opacity: 0.6;
     font-size: 0.9rem;
     margin-top: 40px;
+}
+/* Скрытие стандартного плеера браузера ( из за импорта плеера он по дефолту показывает старт а не кастом кнопку, мне лень удалять ее так что просто вот эту тему добавляю */
+audio {
+    display: none !important;
 }
