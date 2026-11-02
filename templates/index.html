@@ -1,0 +1,25 @@
+<!--Главная страница-->
+{% extends "base.html" %}
+
+{% block title %}Список экспонатов{% endblock %}
+
+{% block header %}
+<h1>🏫 Школьный музей</h1>
+<p class="subtitle">Наведите камеру телефона на QR-код у экспоната</p>
+{% endblock %}
+
+{% block content %}
+<h2>Список экспонатов</h2>
+<div class="exhibits-grid">
+    {% for exp in exhibits %}
+    <a href="exhibit_{{ exp.id }}.html" class="exhibit-card">
+        <img src="{{ exp.image }}" alt="{{ exp.title }}"
+             onerror="this.src='https://via.placeholder.com/400x200?text=Нет+фото'">
+        <div class="card-body">
+            <h3>{{ exp.title }}</h3>
+            <img src="qr/exp_{{ exp.id }}.png" alt="QR код" class="qr-mini">
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

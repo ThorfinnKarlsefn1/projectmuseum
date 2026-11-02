@@ -1,0 +1,21 @@
+<!--Базовый шаблон-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Школьный музей{% endblock %}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        {% block header %}
+        <h1>🏫 Школьный музей</h1>
+        {% endblock %}
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+    </header>
+    <main>{% block content %}{% endblock %}</main>
+    <footer><p>© 2026 Школьный музей. Проект ученика 11 класса.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
