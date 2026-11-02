@@ -35,5 +35,5 @@ if (audio) {
         const percent = (e.clientX - rect.left) / rect.width;
         audio.currentTime = percent * audio.duration;
     });
-    audio.addEventListener('ended', () => { playBtn.textContent = 'Play'; progressFill.style.width = '0%'; });
+    audio.addEventListener('ended', () => { playBtn.textContent = 'Старт'; progressFill.style.width = '0%'; });
 }
